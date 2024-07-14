@@ -1,0 +1,70 @@
+#pokemonList li{
+    display: inline-flex;
+    margin: 5px;
+}
+li.list-group-item{
+   border: none!important;
+}
+.f-single-pmn{
+    color: transparent;
+    background-color: transparent!important;
+    margin: 0!important; 
+    padding: 5px !important; 
+    align-items: center;
+}.f-card-bg-0{
+    background-color: rgb(255, 160, 91,0.5);
+}
+.f-card-bg-1{background-color: rgb(200, 228, 178,0.5);}
+.f-card-bg-2{background-color: rgb(255, 198, 172,0.5);}
+.f-card-bg-3{background-color: rgb(255, 246, 220,0.5);}
+.f-card-bg-4{background-color: rgb(206, 206, 90,0.5);}
+.f-card-bg-5{background-color: rgb(160, 132, 232,0.5);}
+.f-card-bg-6{background-color: rgb(139, 232, 229,0.5);}
+.f-card-bg-7{background-color: rgb(234, 198, 150,0.5);}
+.f-card-bg-8{background-color: rgb(253, 229, 236,0.5);}
+.f-card-bg-9{background-color: rgb(247, 155, 211,0.5);}
+
+.f-card-bg-10{background-color: rgb(239, 98, 98,0.5);}
+
+.f-card-bg-11{background-color: rgb(70,130,169,0.5);}
+
+.f-card-bg-12{background-color: rgb(253, 141, 20,0.5);}
+
+.f-card-bg-13{background-color: rgb(196, 193, 164,0.5);}
+
+.f-card-bg-14{background-color: rgb(246, 244, 235,0.5);}
+
+.f-card-bg-15{background-color: rgb(145, 200, 228,0.5);}
+
+.f-card-bg-16{background-color: rgb(241, 26, 123,0.5);}
+
+.f-card-bg-17{background-color: rgb(242, 238, 157,0.5);}
+
+.f-card-bg-18{background-color: rgb(122, 157, 84,0.5);}
+
+.f-card-bg-19{background-color: rgb(158, 210, 190,0.5);}
+
+.f-card-bg-20{background-color: rgb(101, 40, 247,0.4);}
+
+.f-card-bg-21{background-color: rgb(237,228,255,0.5);}
+
+.f-card-bg-22{background-color: rgb(255, 82, 162,0.5);}
+
+.f-card-bg-23{background-color: rgb(53, 162, 159,0.5);}
+
+.f-card-bg-24{background-color: rgb(241, 201, 59,0.5);}
+
+.f-card-bg-25{background-color: rgb(167, 130, 149,0.5);}
+.f-reset{cursor: pointer;}
+.f-sprite-img{
+    width:60px
+}
+.f-navbar{
+    overflow: hidden;
+    padding: 0 75px 10px;
+    background-color: #dfc8c8;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
