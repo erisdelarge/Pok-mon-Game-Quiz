@@ -6,7 +6,7 @@
 @media screen and (max-width: 576px) {
     .f-main-container .card-header{
         font-size: 0.75rem;
-        padding: 5px 10px;
+        padding: 4px 8px;
     } 
 }
 
@@ -74,6 +74,13 @@ li.list-group-item{
 .f-sprite-img{
     width:60px
 }
+.f-main-navbar{
+    background-color: #e49595;
+}
+.f-main-navbar span{
+    font-size: 16px;
+}
+
 .f-navbar{
     overflow: hidden;
     padding: 0 75px 10px;
@@ -92,6 +99,12 @@ li.list-group-item{
     }
     .f-sprite-img{
         width:30px
+    }
+    .f-main-navbar h4{
+        font-size: 16px;
+    }
+    .f-main-navbar span{
+        font-size: 12px;
     }
 }
 /* @media screen and (min-width: 577px)and (min-width: 768px) {
