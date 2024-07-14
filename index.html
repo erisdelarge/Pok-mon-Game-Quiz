@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Pokémon Guess All Names Game</title>
         <!-- bootstrap 5.3 css  -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
@@ -12,20 +12,21 @@
     <body>
         <div class="f-navbar navbar">
             <!-- <div class="card-header"> -->
-                    
-                <div class="row row-cols-auto pt-3 pb-2">
-                    <div class="col"><h4 class="mb-0"> Enter the Pokemon Name!</h4></div>
-                    <div class="col"><input id="enterPmnName" type="text"></div>
-                    <div class="col" id="resetBtn"><i class="fa-solid fa-arrows-rotate"></i></div>
-                    <div class="col d-flex align-items-center"><button id="switchMode" class="btn btn-light">Switch Mode</button><span id="displayGameMode" class="mx-2"></span></div>
+                    <!-- pt-3 pb-2  -->
+                <div class="row row-cols-auto justify-content-center align-items-center p-2">
+
+                    <div class="col"><h4 class="mb-0" > Enter the Pokemon Name!</h4></div>
+                    <div class="col p-1"><input id="enterPmnName" type="text"></div>
+                    <div class="col p-1" id="resetBtn"><i class="fa-solid fa-arrows-rotate"></i></div>
+                    <div class="col p-1 d-flex align-items-center"><button id="switchMode" class="btn btn-sm btn-light">Switch Mode</button><span id="displayGameMode" class="mx-2"></span></div>
                 </div> 
             <!-- </div> -->
         </div>
-        <div class="m-5">
-            <div class="card">
+        <div class="m-sm-1 m-md-2 m-lg-3 m-xl-4">
+            <div class="card f-main-container">
                
-                <div class="card-body">
-                    <div class="row" id="pokemonList"></div>
+                <div class="card-body f-main-container">
+                    <div class="row justify-content-center f-pokemon-list" id="pokemonList"></div>
                 </div>
             </div>
             

@@ -1,3 +1,18 @@
+.f-main-container{
+    border: none!important;
+    /* padding:0!important */
+}
+
+@media screen and (max-width: 576px) {
+    .f-main-container .card-header{
+        font-size: 0.75rem;
+        padding: 5px 10px;
+    } 
+}
+
+#pokemonList {
+    margin-bottom: 120px;
+}
 #pokemonList li{
     display: inline-flex;
     margin: 5px;
@@ -68,3 +83,20 @@ li.list-group-item{
     width: 100%;
     z-index: 1;
 }
+@media screen and (max-width: 576px) {
+    .f-navbar h4{
+        font-size: 16px;
+    }
+    .f-navbar{
+        padding: 0 6px;
+    }
+    .f-sprite-img{
+        width:30px
+    }
+}
+/* @media screen and (min-width: 577px)and (min-width: 768px) {
+
+    .f-sprite-img{
+        width:45px
+    }
+} */
