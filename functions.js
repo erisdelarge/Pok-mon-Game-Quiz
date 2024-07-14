@@ -177,13 +177,55 @@ const setEnv=()=>{
 
     })
 
+    const endSolutionBtn=document.getElementById("endSolutionBtn");
+    endSolutionBtn.addEventListener("click",function(){
+        console.log("go to solution");
+        if (window.confirm('If you go to the solution, this game will end. Proceed?'))
+            {
+                // They clicked Yes
+                $(".f-single-pmn").each(function(){
+                    // if($(this).text()==cleanInput){
+                        $(this).removeAttr("hidden")
+                        this.style.color = "black";
+                        // this.scrollIntoView();
+                        let primaLettera=$(this).text().charAt(0)
+                        console.log(primaLettera+" - "+letters[primaLettera])
+                        let primaLet=letters[primaLettera]
+                        let counterString=$("#letterCounterRemaining"+primaLet).text()
+                        console.log("num "+counterString)
+                        let counterNumber = parseInt(counterString)
+                        counterNumber--;
+                        $("#letterCounterRemaining"+primaLet).text(counterNumber)
+                        if(counterNumber==0){
+                            console.log("section complete!!")
+                            $("#letterCounter"+primaLet).css("color","green")
+                        }
+                    // }
+                });
+                inputName.value="";
+            }
+            else
+            {
+                // They clicked no
+            }
+        
+
+    })
+
     const resetBtn=document.getElementById("resetBtn");
     resetBtn.addEventListener("click",function(){
-        console.log("reset")
+        console.log("reset");
         pokemonList=pokemonListBackup;
         $(".f-single-pmn").each(function(){    
             $(this).attr("hidden",true)
             this.style.color = "transparent";
+        });
+        $(".total-letter-counter").css("color","red");
+        $(".remaining-letter-counter").each(function(id,elem){
+            console.log("this number");
+            const nextElem=$(elem).next().html().replace("<b>","").replace("</b>","");
+            console.log(nextElem);
+            $(elem).html(nextElem);
         });
     })
 }

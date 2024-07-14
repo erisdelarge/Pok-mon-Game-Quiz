@@ -22,7 +22,7 @@ const createSprite=(lista,nome)=>{
 
 const createCards=(alphabet,listaCompleta,lunghezzaLettere)=>{
   for(let a=0;a<alphabet.length;a++){
-    let card="<div class='col-auto my-1'><div class='card'><div class='card-header'>"+cap[a]+"<span id='letterCounterRemaining"+a+"' class='ms-3'>"+lunghezzaLettere[a]+"</span><span id='letterCounter"+a+"' class='ms-3' style='color:red;'><b>"+lunghezzaLettere[a]+"</b></span></div><ul class='list-group list-group-flush d-flex flex-row flex-wrap f-card-bg-"+a+"'>";
+    let card="<div class='col-auto my-1'><div class='card'><div class='card-header'>"+cap[a]+"<span id='letterCounterRemaining"+a+"' class='ms-3 remaining-letter-counter'>"+lunghezzaLettere[a]+"</span><span id='letterCounter"+a+"' class='ms-3 total-letter-counter' style='color:red;'><b>"+lunghezzaLettere[a]+"</b></span></div><ul class='list-group list-group-flush d-flex flex-row flex-wrap f-card-bg-"+a+"'>";
     alphabetSection=alphabet[a];
     for(let b=0;b<alphabetSection.length;b++){
       // flex-fill
