@@ -72,7 +72,7 @@ for(i=0;i<results.length;i++){
 
     pokemonList.push(pmnName);
     let object={"id":pmnNumber,"name":pmnName}
-    completePokemonList.push(object)
+    completePokemonList.push(object);
 }
 console.log(pokemonList);
 console.log(completePokemonList);
